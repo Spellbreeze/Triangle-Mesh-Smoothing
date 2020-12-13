@@ -200,7 +200,7 @@ String[] cubicStrings = {"Bezier 3", "Bezier 5", "Neville 3", "Neville 5"};
 boolean dynamic = false;
 void doStep7() //
   {
-  titleOfStep[7] = "Border smoothing (Cubic predictor)";
+  titleOfStep[7] = "Border smoothing (Cubic predictor: " + cubicStrings[cubicMethod] + ")";
   cw(dred,2); // color of arrows showing smoothing vectors
     M.smoothenBorderWithCubicPredictor(0.1); //*** STUDENT MUST PROVIDE THE CODE FOR THIS METHOD
     M.smoothenBorderWithCubicPredictor(-0.1);
